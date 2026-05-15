@@ -1,9 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import iconTrofeo from "@/assets/icono-trofeo.png";
-
 import p2022_1 from "@/assets/premios/2022_1.jpeg";
 import p2022_2 from "@/assets/premios/2022_2.jpeg";
 import p2022_3 from "@/assets/premios/2022_3.jpeg";
@@ -18,11 +16,8 @@ import p2017a_3 from "@/assets/premios/2017a_3.jpeg";
 import p2017b_1 from "@/assets/premios/2017b_1.jpeg";
 import p2017b_2 from "@/assets/premios/2017b_2.jpeg";
 import p2017b_3 from "@/assets/premios/2017b_3.jpeg";
-
-=======
 import iconTrofeo from "@/assets/icono-trofeo.png";
 
->>>>>>> 2cd7c657978e4915ff4086e40db8aaf03d0fa01d
 export const Route = createFileRoute("/investigacion_/premios")({
   head: () => ({
     meta: [
@@ -42,33 +37,23 @@ const ORANGE = "#EAA04D";
 type Item = {
   year: string;
   title: string;
-<<<<<<< HEAD
   images: string[];
-=======
->>>>>>> 2cd7c657978e4915ff4086e40db8aaf03d0fa01d
 };
 
 const ITEMS: Item[] = [
   {
     year: "2022",
     title: "ASCO International Women Who Conquer Cancer Mentorship Award.",
-<<<<<<< HEAD
     images: [p2022_1, p2022_2, p2022_3],
-=======
->>>>>>> 2cd7c657978e4915ff4086e40db8aaf03d0fa01d
   },
   {
     year: "2021",
     title: "Reconocimiento al Mérito Cívico “Presea Estado de Nuevo León”",
-<<<<<<< HEAD
     images: [p2021_1, p2021_2, p2021_3],
-=======
->>>>>>> 2cd7c657978e4915ff4086e40db8aaf03d0fa01d
   },
   {
     year: "2019",
     title: "Patient Advocacy Innovation Challenge.",
-<<<<<<< HEAD
     images: [p2019_1, p2019_2],
   },
   {
@@ -107,7 +92,7 @@ function Card({ year, title }: Item) {
         <span className="text-white text-sm">Premios</span>
         <span className="block w-px h-10 bg-white/60" />
         <img src={iconTrofeo} alt="" className="h-9 w-auto" />
-<<<<<<< HEAD
+
         <span className="text-white text-sm">{item.year}</span>
       </div>
 
@@ -248,21 +233,12 @@ function Lightbox({
 }
 
 function Page() {
-<<<<<<< HEAD
   const [open, setOpen] = useState<{ images: string[]; index: number } | null>(null);
 
   return (
     <div className="bg-[#f4f4f5] min-h-screen">
       <section className="container-milc pt-14 md:pt-20 pb-10 reveal">
         <h1 className="text-3xl md:text-4xl font-extrabold text-milc-gray">Premios</h1>
-=======
-  return (
-    <div className="bg-[#f4f4f5] min-h-screen">
-      <section className="container-milc pt-14 md:pt-20 pb-10 reveal">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-milc-gray">
-          Premios
-        </h1>
->>>>>>> 2cd7c657978e4915ff4086e40db8aaf03d0fa01d
         <div className="gradient-bar my-6" />
         <h2
           className="text-3xl md:text-5xl font-extrabold leading-tight max-w-5xl"
@@ -275,7 +251,7 @@ function Page() {
       <section className="container-milc pb-20">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {ITEMS.map((it) => (
-<<<<<<< HEAD
+
             <Card
               key={it.title}
               item={it}
